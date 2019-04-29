@@ -55,19 +55,20 @@ I will have to add a "requirements.txt" file with the
 
 ## Q3
 Third question was to use the tool built for a data science project
-The Machine learning project which I was working on is a Kaggle competition on Sentiment Analysis Review of a Rotten Tomato dataset. 
-Preprocessing:
-Stemming
-Word tokenize
-Data Sampling (as data is biased towards neutral)
+The Machine learning project which I was working on is a Kaggle competition on Sentiment Analysis Review of a Rotten Tomato dataset.   
+(Data is added to the data folder inside cuml)  
+Preprocessing:  
+Stemming  
+Word tokenize  
+Data Sampling (as data is biased towards neutral)  
 
-Model training
-Embedding layer
-LSTM layer
-Dense layer
+Model training  
+Embedding layer  
+LSTM layer  
+Dense layer  
 
-Training accuracy ~ 80% 
-Validation accuracy ~ 75%
+Training accuracy ~ 80%   
+Validation accuracy ~ 75%  
 
 
 
