@@ -9,6 +9,7 @@ Prerequisites for using Rapidsai tool should be installed and updated on the Pc 
 2.Install docker-ce  
 3.Install nvidia-docker  
 4.Install required nvidia drivers  
+5.Docker login
 
 First Step:    
 Clone the rapidsai/build repository in the GCP/EC2 instance
@@ -31,6 +32,11 @@ sudo docker run --runtime=nvidia \
         -p 8786:8786 \
         adi6496/adityak-adaptivealgo
 ```
+Fourth Step:  
+Pull the image from Docker hub
+```
+sudo docker pull adi6496/adityak-adaptivealgo
+```
 **NOTE: This will run JupyterLab on port 8888 on your host machine.**
 
 ## Q2  
@@ -38,4 +44,11 @@ The Repo2Docker tool creates a Docker image from a repository. The tool requires
 The requirements.txt file needs to have all the libraries necessary to run the files in your repository.  
 Example: Lets say I have a repository with .py files containing different libraries like pandas, numpy, keras etc, 
 I will have to add a "requirements.txt" file with the 
+
+## Q3
+Third question was to use the tool built for a data science project
+The Machine learning project which I was working on is a Kaggle competition on Sentiment Analysis Review of a Rotten Tomato dataset. 
+Preprocessing:
+Stemming
+Word2vec
 
