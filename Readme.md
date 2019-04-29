@@ -20,7 +20,7 @@ https://github.com/rapidsai/build.git
 Second Step:  
 Build an image with an particular template 
 ```
-sudo bash rapidsdevtool.sh buildDockerImage  -t ubuntu-devel –i adi6496/adityak-adaptivealgo
+sudo bash rapidsdevtool.sh buildDockerImage  -t ubuntu-devel –i adi6496/adityak-adaptivealgo-new
 ```
 
 Third Step:
@@ -30,14 +30,22 @@ sudo docker run --runtime=nvidia \
         -p 8888:8888 \
         -p 8787:8787 \
         -p 8786:8786 \
-        adi6496/adityak-adaptivealgo
+        adi6496/adityak-adaptivealgo-new
 ```
+
+To run the Jupyterlab use      
+```
+bash utils/start-jupyter.sh
+```
+
 Fourth Step:  
 Pull the image from Docker hub
 ```
-sudo docker pull adi6496/adityak-adaptivealgo
+sudo docker pull adi6496/adityak-adaptivealgo-new
 ```
 **NOTE: This will run JupyterLab on port 8888 on your host machine.**
+
+
 
 ## Q2  
 The Repo2Docker tool creates a Docker image from a repository. The tool requires a 'requirement.txt' file in the repository.
@@ -50,5 +58,16 @@ Third question was to use the tool built for a data science project
 The Machine learning project which I was working on is a Kaggle competition on Sentiment Analysis Review of a Rotten Tomato dataset. 
 Preprocessing:
 Stemming
-Word2vec
+Word tokenize
+Data Sampling (as data is biased towards neutral)
+
+Model training
+Embedding layer
+LSTM layer
+Dense layer
+
+Training accuracy ~ 80% 
+Validation accuracy ~ 75%
+
+
 
